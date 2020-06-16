@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow</title>
+
+    <style>
+        body {
+            width: 90%;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 2em;
+        }
+        header h1{
+            font-weight: bold;
+            font-size: 60px;
+        }
+        #myImage{
+            display: block;
+            width: 600px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .clicks{
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 0;
+        }
+        .clicks li{
+            float: left;
+            margin-right: 2px;
+        }
+        .clicks li button{
+            width: 70px;
+            height: 50px;
+            background-color: darkgrey;
+        }
+        .rainbowBtn{
+            width: 100px;
+            height: 50px;
+            background-color: rgba(73, 57, 57, 0.555);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rainbow</h1>
+    </header>
+
+    <section>
+        <p>A rainbow is a meteorrological phenomenon that is caused by reflection, refraction and
+             dispersion of light in water droplets resulting in a spectrum of light appearing in
+              the sky. It takes the form of the multicoloured circular arc.
+            <cite>Wikipedia</cite> </p>
+    </section>
+
+
+    <section>
+        <img id="myImage" src="img/rainbow.png">
+
+        <button class="rainbowBtn" onclick="document.getElementById('myImage').src='../JS Tutorial/img/rainbow.png'">
+         Rainbow</button>
+
+        <p>To clearly view the colours of a rainbow, click the buttons below</p>
+        <ul class="clicks">
+            <li><button onclick="document.getElementById('myImage').src='img/red.jpeg'">
+                Show Red</button></li>
+            <li><button onclick="document.getElementById('myImage').src='img/orange.png'">
+                Show Orange</button></li>
+            <li><button onclick="document.getElementById('myImage').src='img/yellow.jpeg'">
+                Show Yellow</button></li>
+            <li><button onclick="document.getElementById('myImage').src='img/green.png'">
+                Show Green</button></li>
+            <li><button onclick="document.getElementById('myImage').src='img/blue.png'">
+                Show Blue</button></li>
+            <li><button onclick="document.getElementById('myImage').src='img/indigo.png'">
+                Show Indigo</button></li>
+            <li><button onclick="document.getElementById('myImage').src='img/violet.png'">
+                Show Violet</button></li>
+        </ul>
+    </section>
+
+    <section>
+        <button class="rainbowBtn" onclick="document.getElementById('myImage').src='img/rainbow.png'">
+            Back To Rainbow</button>
+    </section>
+
+</body>
+</html>
